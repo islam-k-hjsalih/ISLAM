@@ -14,8 +14,7 @@ cv2.waitKey(0)
 h,w,=img.shape[:2]
 img1=img.copy()
 
-img1[0:h//2,0:w//2]=0,0,255
-
+img1[0:h//2:,w//2:w]=0,0,255
 cv2.imshow("img",img1)
 cv2.waitKey(0)
 
